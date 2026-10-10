@@ -1,0 +1,15 @@
+# Visual Studio files
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+
+# Local database files
+App_Data/*.mdf
+App_Data/*.ldf
+
+# Environment files
+.env
+.env.*
+!.env.example

@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="UniversitySystem.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>University System</title>
+    <link href="~/CSS/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <nav class="navbar">
+            <div class="logo">🎓 University System</div>
+
+            <div class="links">
+                <asp:PlaceHolder ID="AdminNav" runat="server">
+                    <a href="/Admin/Dashboard.aspx">Dashboard</a>
+                    <a href="/Admin/Students.aspx">Students</a>
+                    <a href="/Admin/Doctors.aspx">Doctors</a>
+                    <a href="/Admin/Programs.aspx">Programs</a> <a href="/Admin/Courses.aspx">Courses</a>
+                    <a href="/Admin/Registration.aspx">Registration</a>
+                    <a href="/Admin/Grades.aspx">Grades</a>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="DoctorNav" runat="server">
+                    <a href="/Doctor/Dashboard.aspx">Dashboard</a>
+                    <a href="/Doctor/MyCourses.aspx">My Courses</a>
+                    <a href="/Doctor/MyStudents.aspx">My Students</a>
+                    <a href="/Doctor/EnterGrades.aspx">Enter Grades</a>
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="StudentNav" runat="server">
+                    <a href="/Student/Dashboard.aspx">Dashboard</a>
+                    <a href="/Student/MyCourses.aspx">My Courses</a>
+                    <a href="/Student/MyGrades.aspx">My Grades</a>
+                    <a href="/Student/Profile.aspx">Profile</a>
+                </asp:PlaceHolder>
+
+                <a href="/Logout.aspx">Logout</a>
+            </div>
+
+            <div class="user">
+                Welcome, <asp:Label ID="lblName" runat="server"></asp:Label>
+            </div>
+        </nav>
+
+        <main class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </main>
+    </form>
+</body>
+</html>

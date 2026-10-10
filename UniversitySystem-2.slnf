@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "UniversitySystem.slnx",
+    "projects": [
+      "UniversitySystem\\UniversitySystem.csproj"
+    ]
+  }
+}
