@@ -1,5 +1,4 @@
-﻿INSERT INTO dbo.Users (Username, Password, RoleID, FullName,Department) 
-VALUES ('admin', '123456', 1, 'Shaimaa Admin','computer science');
+
 
 INSERT INTO dbo.Roles (RoleName) VALUES ('Admin'), ('Doctor'), ('Student');
 
